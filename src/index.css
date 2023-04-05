@@ -1,0 +1,320 @@
+html, body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #293264;
+}
+
+html, body, .App {
+  height: 100%
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.answer-page label{
+  opacity: 0.5;
+}
+
+
+.label-opacity{
+  opacity: 1;
+}
+
+.check-with-label:checked + .label-for-check {
+  
+  background-color:#D6DBF5;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*quiz section*/
+
+form{
+  
+  display: flex;
+  flex-direction: column;
+  padding: 0.2em;
+  max-width: 700px;
+  padding-top: 3.5em;
+}
+
+
+
+.trivia-section{
+  
+  margin: 0em;
+  padding: 0.2em;
+  
+}
+
+.trivia-section h3{
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  padding: 0.5em 0.95em;
+  margin-top: 0;
+  padding-top: 0.3em;
+  
+
+}
+
+.answers-section{
+  
+  border-bottom: 0.79px solid #DBDEF0;
+  display: flex;
+  padding: 0.5em;
+  padding-top: 0em;
+  margin: 0;
+  
+ 
+
+}
+
+
+label {
+  border: 2px solid blue;
+  display: flex;
+  padding: 0.65em 1.5em ;
+  margin: 0.5em 0.7em;
+  font-size: 0.85rem;
+  min-width: 100px;
+  justify-content: center;
+  border: 0.771045px solid #4D5B9E;
+  border-radius: 7.71045px;
+  font-weight: 500;
+  
+  
+}
+
+.form-buttons {
+  
+  padding: 1em;
+  margin: 0.5em;
+  display: flex;
+  justify-content: center 
+}
+
+.answers-message {
+  
+  margin-left:120px;
+  padding: 0;
+  display: flex;
+
+  
+}
+
+.answers-message p{
+  padding: 0 0.5em;
+  margin: 0;
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+form button{ 
+  
+  padding: 1em 2em;
+  background: #4D5B9E;
+  color: #F5F7FB;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  min-width: 150px;
+}
+
+#play-again{
+  
+  margin-left: auto;
+  margin-right: 30px;
+  
+}
+
+form button:disabled { 
+  opacity: 0.8;
+}
+
+
+
+/* blobs */
+
+.yellow-blob, .blue-blob {
+  position: absolute;
+  height: fit-content;
+  
+}
+
+.yellow-blob{
+
+top: 0;
+bottom: 0;
+left: auto;
+right: 0;
+
+
+
+}
+
+.blue-blob{
+
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  
+}
+
+.App div >img {
+  opacity: 0.2;
+  display: block;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 700px)  {
+  .blue-blob , .yellow-blob{
+    display: none;
+  }
+}
+
+/* start page*/
+
+.first-page{
+  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+
+.first-page h1 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin: 0
+}
+
+.first-page p{
+  
+  font-weight: 400;
+  margin-bottom: 2em;
+
+}
+
+#start-btn{
+  background: #4D5B9E;
+  color: #F5F7FB;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: 50%;
+  padding: 1em;
+  letter-spacing: 0.065em;
+  width: 250px;
+  
+  
+
+
+
+}
+
+.App {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100vh;
+  background: #F5F7FB;
+  
+}
+
+/* button ,button:disabled {
+  background: purple;
+  border: none;
+  color: white;
+}
+
+
+/*
+
+.info-section{
+  border-radius: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+  background-color: #1A1B21;
+  gap: 5px;
+  
+}
+
+.info-section * {
+  margin: 5px;
+}
+
+.info-section img{
+  border-radius: 40px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.buttons-section{
+  display: flex;
+  justify-content: center;
+}
+
+/*button{
+  font-size: 1.3rem;
+  width: 50%;
+  padding: 1em;
+  border-radius: 10px;
+}
+*/
+/*
+
+.about-section , .interests-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1A1B21;
+}
+
+.about-section * , .interests-section * {
+  margin: 5px;
+  line-height: 25px;
+}
+
+.footer-section {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #161619;
+
+
+}
+
+.footer-section img {
+  display: block;
+  width: 10%;
+}
+
+*/
